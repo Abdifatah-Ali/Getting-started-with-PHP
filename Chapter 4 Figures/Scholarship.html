@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Scholarship Form</title>
+
+<style type="text/css">
+     .style1 {
+          color: #333;
+          text-align: center;
+         }
+     #header {
+          font-family: verdana;
+          color: #ec6810;
+          font-size: 28px;
+          text-transform: uppercase;
+          text-align: center;
+         }
+     .button {
+          background-color: #333;
+          color: #fff;
+          padding: 10px 15px;
+          border: none;
+          margin-top: 10px;
+        }
+     .button:hover {
+          background-color: red;
+          color: white;
+        } 
+     .my-form {
+          margin-top: 50px;
+       }     
+} 
+</style>
+</head>
+<body>
+     <div class="style1">
+          <h2 id="header">Scholarship Form</h2><hr />
+          <form class="my-form" name = "scholarship" action = "process_Scholarship.php" method = "post">
+               <p>First Name: <input type="text" name="fName" /></p>
+               <p>Last Name: <input type="text" name="lName" /></p>
+               <p><input class="button" type="reset" value="Clear Form" />&nbsp; &nbsp;<input class="button" type="submit" name="Submit" value="Send Form" />
+          </form>
+     </div>
+</body>
+</html>

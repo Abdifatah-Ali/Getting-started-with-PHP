@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Paycheck Calculator</title>
+
+<style type="text/css">
+     .style1 {
+          color: #333;
+          text-align: center;
+         }
+     #header {
+          font-family: verdana;
+          color: #008000;
+          font-size: 28px;
+          text-transform: uppercase;
+          text-align: center;
+         }
+     .button {
+          background-color: #333;
+          color: #fff;
+          padding: 10px 15px;
+          border: none;
+          margin-top: 10px;
+          border-radius: 5px;
+          font-size: 0.9em;
+        }
+     .button:hover {
+          background-color: red;
+          color: white;
+        } 
+     .my-form {
+          margin-top: 50px;
+          border: 1px solid #333;
+          max-width: 300px;
+          margin: 15px auto;
+          padding: 60px 20px;
+          background: #DCDCDC;
+          border-radius: 8px;
+          box-sizing: border-box;
+       } 
+     p {
+          color: #000;
+          font-size: 1em;
+          font-family: sans-serif;
+       } 
+     input[type="text"] {
+          background-color: #fff;
+          border: none;
+          padding: 8px;
+          border: 1px solid #333;
+          border-radius: 5px;
+       } 
+     .input-text {
+          margin-top:10px;
+     }  
+</style>
+</head>
+<body>
+     <div class="style1">
+          <h1 id="header">Employee's Weekly Gross Salary</h1><hr />
+          <form class="my-form" name = "paycheck" action = "paycheck.php" method = "post">
+               <p>Number of work hours: <input class="input-text" type="text" name="hours" /></p>
+               <p>Hourly wage rate ($): <input class="input-text" type="text" name="wage" /></p>
+               <p><input class="button" type="reset" value="Clear Form" />&nbsp; &nbsp;<input class="button" type="submit" name="Submit" value="Send Form" />
+          </form>
+     </div>
+</body>
+</html>
