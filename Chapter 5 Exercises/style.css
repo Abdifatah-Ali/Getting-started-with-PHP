@@ -1,0 +1,122 @@
+body {
+	color: #000;
+	background-color: #fff;
+	font-family: 'lato', sans-serif;
+}
+
+.main {
+	width: 600px;
+	margin: 0 auto;
+}
+
+h1 {
+    font-family: verdana;
+    color: #333;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top:20px;
+}
+
+
+form, p {
+	margin: 15px 10px;
+}
+
+fieldset {
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+legend {
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+}
+
+legend:hover {
+    background-color: red;
+    color: white;
+  }
+
+  .S-page {
+    border: 1px solid #333;
+    background-color: red;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 60px;
+}
+
+.S-page:hover {
+    background-color:#333;
+    color: white;
+  }
+
+fieldset, legend {
+	border: 1px solid #333;
+	padding: 10px;
+}
+
+input, textarea {
+	margin-bottom: 12px;
+}
+
+input[type="file"] {
+	padding: 5px 0;
+}
+
+input[type="submit"], input[type="reset"] {
+	padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+	border: 1px solid black;
+	border-radius: 10px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	margin-right: 20px;
+}
+
+input[type="submit"]:hover,  input[type="reset"]:hover {
+    background-color: red;
+    color: white;
+}
+
+/* input[type="submit"] {
+	background-color: #0e4970;
+} */
+
+/* input[type="reset"] {
+	background-color: #db3941;
+} */
+
+
+label {
+	display: inline-block;
+	width: 140px;
+	text-align: right;
+	margin: 5px;
+	vertical-align: top;
+}
+
+small {
+	font-size: 75%;
+}
+
+img {
+	max-width: 100%;
+}
+
+.buttons {
+	float: right;
+}
+
+/* p {
+	text-align: center;
+	color: #001f3f;
+} */
+
