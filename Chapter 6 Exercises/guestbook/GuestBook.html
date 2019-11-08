@@ -1,0 +1,98 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Guest Book</title>
+   <style type="text/css">
+
+        body {
+            color: #000;
+            background-color: #ffe4c4;
+            font-family: 'lato', sans-serif;
+        }
+
+
+        h1 {
+            font-family: verdana;
+            color: #333;
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            margin-top:20px;
+        }
+        .button {
+          background-color: #333;
+          color: #fff;
+          padding: 10px 15px;
+          border: none;
+          margin-top: 10px;
+          border-radius: 5px;
+          font-size: 0.9em;
+        }
+       .button:hover {
+          background-color: red;
+          color: white;
+        }
+
+       .my-form {
+          margin-top: 50px;
+          border: 1px solid #333;
+          max-width: 300px;
+          margin: 15px auto;
+          padding: 60px 20px;
+          background: #f0fff0;
+          border-radius: 8px;
+          box-sizing: border-box;
+       } 
+        .link {
+            text-align: center;
+            text-decoration: none;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            margin-top: 10px;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+        .link:hover {
+          background-color: red;
+          color: white;
+        }
+
+        p {
+            color: #000;
+            font-size: 1em;
+            font-family: sans-serif;
+            text-align: center;
+            } 
+        input[type="text"] {
+            background-color: #fff;
+            border: none;
+            padding: 8px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            } 
+
+        .input-text {
+             margin-top:10px;
+            } 
+
+   </style>
+
+</head>
+
+<body>
+<h1>Enter your name and email to sign our guest book</h1><hr>
+
+<form class="my-form" method="get" action="SignGuestBook.php">
+<p>Guest Name:<input class="input-text" type="text" name="guest_name" /></p>
+<p>Email Address:<input class="input-text" type="text" name="email" /></p>
+<p><input class="button" type="submit" value="Submit" /></p>
+</form>
+
+<p><a class="link" href="ShowGuestBook.php">Show Guest Book</a></p>
+
+</body>
+</html>

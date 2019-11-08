@@ -1,0 +1,42 @@
+body {
+	color: #000;
+	background-color: #fff;
+    font-family: 'lato', sans-serif;
+}
+
+
+h1 {
+    font-family: verdana;
+    color: #333;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top:20px;
+}
+
+.my-form {
+    text-align: center;
+    border: 1px solid red;
+}
+
+input[type="submit"], input[type="reset"] {
+	padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+	border: 1px solid black;
+	border-radius: 10px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	margin-right: 20px;
+}
+
+input[type="submit"]:hover,  input[type="reset"]:hover {
+    background-color: red;
+    color: white;
+}
+
+
+
+
+
