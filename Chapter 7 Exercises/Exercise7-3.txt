@@ -1,0 +1,71 @@
+mysql> SELECT team, HR FROM teamstats
+    -> ORDER BY HR DESC LIMIT 10
+    -> INTO OUTFILE 'Chapter 07/ Projects/hrleaders.txt'
+    -> FIELDS TERMINATED BY '\t'[ENTER ] -> LINES TERMINATED BY '\n';
+ERROR 1064 (42000): Erreur de syntaxe près de '[ENTER ] -> LINES TERMINATED BY '\n'' à la ligne 4
+mysql> FIELDS TERMINATED BY '\t'
+    -> LINES TERMINATED BY '\n';
+ERROR 1064 (42000): Erreur de syntaxe près de 'FIELDS TERMINATED BY '\t'
+LINES TERMINATED BY '\n'' à la ligne 1
+mysql> INTO OUTFILE 'Chapter 07/ Projects/hrleaders.txt'
+    -> INTO OUTFILE 'Chapter 07/Projects/team_stats.txt'
+    -> FIELDS TERMINATED BY '\t'
+    -> LINES TERMINATED BY '\n';
+ERROR 1064 (42000): Erreur de syntaxe près de 'INTO OUTFILE 'Chapter 07/ Projects/hrleaders.txt'
+INTO OUTFILE 'Chapter 07/Proje' à la ligne 1
+mysql> INTO OUTFILE 'Projects/hrleaders.txt'
+    -> FIELDS TERMINATED BY '\t'
+    -> LINES TERMINATED BY '\n';
+ERROR 1064 (42000): Erreur de syntaxe près de 'INTO OUTFILE 'Projects/hrleaders.txt'
+FIELDS TERMINATED BY '\t'
+LINES TERMINATED' à la ligne 1
+mysql> SELECT team, HR FROM teamstats
+    -> ORDER BY HR DESC LIMIT 10
+    -> INTO OUTFILE 'Projects/hrleaders.txt'
+    -> FIELDS TERMINATED BY '\t'
+    ->  LINES TERMINATED BY '\n';
+ERROR 1086 (HY000): Le fichier 'Projects/hrleaders.txt' existe déjà
+mysql> LINES TERMINATED BY '\n';
+ERROR 1064 (42000): Erreur de syntaxe près de 'LINES TERMINATED BY '\n'' à la ligne 1
+mysql> SELECT team, HR FROM teamstats
+    -> ORDER BY HR DESC LIMIT 10
+    -> INTO OUTFILE 'Projects/hrleaders.txt'
+    -> FIELDS TERMINATED BY '\t'
+    -> LINES TERMINATED BY '\n';
+ERROR 1086 (HY000): Le fichier 'Projects/hrleaders.txt' existe déjà
+mysql> CREATE TABLE hrleaders (Team VARCHAR(50), HR INT);
+Query OK, 0 rows affected (0.18 sec)
+
+mysql> LOAD DATA INFILE '/Projects/hrleaders.txt'
+    -> INTO TABLE hrleaders;
+ERROR 29 (HY000): File 'c:\Projects\hrleaders.txt' not found (Errcode: 2 - No such file or directory)
+mysql> LOAD DATA INFILE 'Projects/hrleaders.txt'
+    -> INTO TABLE hrleaders;
+Query OK, 10 rows affected (0.09 sec)
+Enregistrements: 10  Effac├®s: 0  Non trait├®s: 0  Avertissements: 0
+
+mysql> SELECT * FROM hrleaders;
++-----------------------+-------+
+| Team                  | HR    |
++-----------------------+-------+
+| New York Yankees      | 13914 |
+| San Francisco Giants  | 13262 |
+| Chicago Cubs          | 12479 |
+| Atlanta Braves        | 12203 |
+| Detroit Tigers        | 12050 |
+| Boston Red Sox        | 11671 |
+| Cincinnati Reds       | 11533 |
+| Philadelphia Phillies | 11457 |
+| Oakland Athletics     | 11408 |
+| Cleveland Indians     | 11338 |
++-----------------------+-------+
+10 rows in set (0.00 sec)
+
+mysql> SHOW TABLES;
++--------------------------+
+| Tables_in_baseball_stats |
++--------------------------+
+| hrleaders                |
+| teamstats                |
++--------------------------+
+2 rows in set (0.00 sec)

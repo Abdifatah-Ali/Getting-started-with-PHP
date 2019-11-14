@@ -1,0 +1,152 @@
+mysql> SELECT team, G, AB FROM teamstats;
++-------------------------------+-------+--------+
+| team                          | G     | AB     |
++-------------------------------+-------+--------+
+| Arizona Diamondbacks          |  1819 |  62131 |
+| Atlanta Braves                | 19764 | 677310 |
+| Baltimore Orioles             | 16861 | 572146 |
+| Boston Red Sox                | 16848 | 575510 |
+| Chicago Cubs                  | 19796 | 678492 |
+| Chicago White Sox             | 16855 | 570404 |
+| Cincinnati Reds               | 19382 | 661241 |
+| Cleveland Indians             | 16863 | 575356 |
+| Colorado Rockies              |  2565 |  88540 |
+| Detroit Tigers                | 16885 | 575699 |
+| Florida Marlins               |  2561 |  87282 |
+| Houston Astros                |  7526 | 255339 |
+| Kansas City Royals            |  6380 | 218508 |
+| Los Angeles Angels of Anaheim |  7684 | 260842 |
+| Los Angeles Dodgers           | 19185 | 654177 |
+| Milwaukee Brewers             |  6387 | 217387 |
+| Minnesota Twins               | 16869 | 575390 |
+| New York Mets                 |  7518 | 254460 |
+| New York Yankees              | 16836 | 574293 |
+| Oakland Athletics             | 16818 | 570335 |
+| Philadelphia Phillies         | 19190 | 657092 |
+| Pittsburgh Pirates            | 19343 | 663975 |
+| San Diego Padres              |  6393 | 216951 |
+| San Francisco Giants          | 19263 | 657818 |
+| Seattle Mariners              |  5098 | 174802 |
+| St. Louis Cardinals           | 19387 | 665624 |
+| Tampa Bay Rays                |  1817 |  62386 |
+| Texas Rangers                 |  7671 | 262238 |
+| Toronto Blue Jays             |  5101 | 175373 |
+| Washington Nationals          |  6385 | 216094 |
++-------------------------------+-------+--------+
+30 rows in set (0.00 sec)
+
+mysql> SELECT team, G, AB FROM teamstats ORDER BY team;
++-------------------------------+-------+--------+
+| team                          | G     | AB     |
++-------------------------------+-------+--------+
+| Arizona Diamondbacks          |  1819 |  62131 |
+| Atlanta Braves                | 19764 | 677310 |
+| Baltimore Orioles             | 16861 | 572146 |
+| Boston Red Sox                | 16848 | 575510 |
+| Chicago Cubs                  | 19796 | 678492 |
+| Chicago White Sox             | 16855 | 570404 |
+| Cincinnati Reds               | 19382 | 661241 |
+| Cleveland Indians             | 16863 | 575356 |
+| Colorado Rockies              |  2565 |  88540 |
+| Detroit Tigers                | 16885 | 575699 |
+| Florida Marlins               |  2561 |  87282 |
+| Houston Astros                |  7526 | 255339 |
+| Kansas City Royals            |  6380 | 218508 |
+| Los Angeles Angels of Anaheim |  7684 | 260842 |
+| Los Angeles Dodgers           | 19185 | 654177 |
+| Milwaukee Brewers             |  6387 | 217387 |
+| Minnesota Twins               | 16869 | 575390 |
+| New York Mets                 |  7518 | 254460 |
+| New York Yankees              | 16836 | 574293 |
+| Oakland Athletics             | 16818 | 570335 |
+| Philadelphia Phillies         | 19190 | 657092 |
+| Pittsburgh Pirates            | 19343 | 663975 |
+| San Diego Padres              |  6393 | 216951 |
+| San Francisco Giants          | 19263 | 657818 |
+| Seattle Mariners              |  5098 | 174802 |
+| St. Louis Cardinals           | 19387 | 665624 |
+| Tampa Bay Rays                |  1817 |  62386 |
+| Texas Rangers                 |  7671 | 262238 |
+| Toronto Blue Jays             |  5101 | 175373 |
+| Washington Nationals          |  6385 | 216094 |
++-------------------------------+-------+--------+
+30 rows in set (0.00 sec)
+
+mysql> SELECT team, G, AB FROM teamstats ORDER BY team DESC;
++-------------------------------+-------+--------+
+| team                          | G     | AB     |
++-------------------------------+-------+--------+
+| Washington Nationals          |  6385 | 216094 |
+| Toronto Blue Jays             |  5101 | 175373 |
+| Texas Rangers                 |  7671 | 262238 |
+| Tampa Bay Rays                |  1817 |  62386 |
+| St. Louis Cardinals           | 19387 | 665624 |
+| Seattle Mariners              |  5098 | 174802 |
+| San Francisco Giants          | 19263 | 657818 |
+| San Diego Padres              |  6393 | 216951 |
+| Pittsburgh Pirates            | 19343 | 663975 |
+| Philadelphia Phillies         | 19190 | 657092 |
+| Oakland Athletics             | 16818 | 570335 |
+| New York Yankees              | 16836 | 574293 |
+| New York Mets                 |  7518 | 254460 |
+| Minnesota Twins               | 16869 | 575390 |
+| Milwaukee Brewers             |  6387 | 217387 |
+| Los Angeles Dodgers           | 19185 | 654177 |
+| Los Angeles Angels of Anaheim |  7684 | 260842 |
+| Kansas City Royals            |  6380 | 218508 |
+| Houston Astros                |  7526 | 255339 |
+| Florida Marlins               |  2561 |  87282 |
+| Detroit Tigers                | 16885 | 575699 |
+| Colorado Rockies              |  2565 |  88540 |
+| Cleveland Indians             | 16863 | 575356 |
+| Cincinnati Reds               | 19382 | 661241 |
+| Chicago White Sox             | 16855 | 570404 |
+| Chicago Cubs                  | 19796 | 678492 |
+| Boston Red Sox                | 16848 | 575510 |
+| Baltimore Orioles             | 16861 | 572146 |
+| Atlanta Braves                | 19764 | 677310 |
+| Arizona Diamondbacks          |  1819 |  62131 |
++-------------------------------+-------+--------+
+30 rows in set (0.00 sec)
+
+mysql>  SELECT team, HR FROM teamstats ORDER BY HR LIMIT 1;
++----------------+------+
+| team           | HR   |
++----------------+------+
+| Tampa Bay Rays | 1713 |
++----------------+------+
+1 row in set (0.00 sec)
+
+mysql> SELECT team, HR FROM teamstats ORDER BY HR DESC LIMIT 1;
++------------------+-------+
+| team             | HR    |
++------------------+-------+
+| New York Yankees | 13914 |
++------------------+-------+
+1 row in set (0.00 sec)
+
+mysql> SELECT SUM(G)/2 FROM teamstats;
++-------------+
+| SUM(G)/2    |
++-------------+
+| 182525.0000 |
++-------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT AVG(AVG) FROM teamstats;
++---------------------+
+| AVG(AVG)            |
++---------------------+
+| 0.26199999650319417 |
++---------------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT SUM(AVG*AB)/SUM(AB) FROM teamstats;
++---------------------+
+| SUM(AVG*AB)/SUM(AB) |
++---------------------+
+|  0.2625602253617602 |
++---------------------+
+1 row in set (0.00 sec)
+
+mysql>
