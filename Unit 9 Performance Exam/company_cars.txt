@@ -1,0 +1,11 @@
+CK-2987	2009	Toyota	Corolla	3508.4	
+104-ABK	2008	Chevrole	Cobalt	24829.4			
+522-BLM	2008	Ford	Focus	24829.4		
+AK-1234	2007	Honda	Civic	48891.1		
+66804	2008	Nissan	Senta	28336.7	   	
+C9L-2Y2	2006	Honda	Accord	77484.4		
+8331-RT	2010	Toyota	Camry	855.5		
+932-HGY	2010	Ford	Fusion	95.9		
+MN-304	2007	Chevrolet	Malibu	57024.2		
+SKL-783	2007	Hyundai	Sonata	62993.6		
+2209-PW	2009	Nissan	Altima	17398.3		
