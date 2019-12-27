@@ -26,5 +26,6 @@ echo "$DaysArray[4]<br />";
 echo "$DaysArray[5]<br />";
 echo "$DaysArray[6]<br />";
 ?>
+  
 </body>
 </html>
