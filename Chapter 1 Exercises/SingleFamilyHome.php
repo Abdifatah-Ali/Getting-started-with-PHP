@@ -6,6 +6,7 @@
 <title>Single Family Home</title>
 </head>
 <body>
+
 <?php
 $SingleFamilyHome = 399500;
 $SingleFamilyHome_Display =
