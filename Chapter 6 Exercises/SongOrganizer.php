@@ -216,6 +216,7 @@
 		</div>
 		
 		<!-- the form is used to add a song to the list -->
+		
 		<form action="SongOrganizer.php" method="post">
 			<p>Add a New Song</p>
 			<p>Song Name: <input type="text" name="SongName" required /></p>
