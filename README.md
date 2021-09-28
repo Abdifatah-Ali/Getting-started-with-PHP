@@ -1,2 +1,2 @@
 # Getting-started-with-PHP
-In this Repo, I will store all PHP with MySQL chapters/assignments course from my school. 
+This repository contains required chapter assignments from CSCI 230 Web Database I (PHP with MySQL) course in my college.
